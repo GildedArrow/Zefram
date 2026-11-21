@@ -1,0 +1,46 @@
+0 0.0 .0 0.6 0.
+
+import math
+import io
+
+int iters := io.input()
+
+//This is a comment
+
+float example_float := 0.4448
+float example_float2 := .321
+
+
+float root = math.sqrt(2.0)
+
+string test := "This is" + " a string" //Showing off string concatenation
+string test2 := "z"
+
+int[5] array := {0, 1, 2, 3, 4}
+
+type object
+    int x
+    int y
+end
+
+object thing := new object
+thing.x := 0
+thing.y := 0
+
+delete thing
+
+
+define add(int a, int b) : int
+    return a + b
+end
+
+int a := 0
+int b := 1
+
+for int i := 0; i < iters; i+=1
+    io.print(a)
+
+    int c := add(a, b)
+    a := b
+    b := c
+end
